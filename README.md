@@ -25,3 +25,19 @@ crypto map <WORD4> 10 ipsec-isakmp
 interface <NR>
   crypto map <WORD4>
 ```
+
+## QoS Lab
+
+```
+class-map <WORD-CM>
+  match <argument>
+  description <OPTIONAL>
+
+policy-map <WORD-P>
+  class <WORD-CM>
+    set <argument>
+    bandwidth <VAL>
+    
+interface <NR>
+  service-policy {input|output} <WORD-P>
+```
