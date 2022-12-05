@@ -2,6 +2,8 @@
 
 ## VPN Lab
 
+Lab commands:
+
 ```
 crypto isakmp policy 1
   encryption aes
@@ -24,6 +26,11 @@ crypto map <WORD4> 10 ipsec-isakmp
 
 interface <NR>
   crypto map <WORD4>
+```
+Show commands
+```
+show crypto isakmp sa
+show crypto ipsec sa
 ```
 
 ## QoS Lab
